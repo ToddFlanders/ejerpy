@@ -1,0 +1,6 @@
+print("Inserte su peso")
+peso = float(input())
+print("Inserte su estatura")
+estatura = float(input())
+imc= round(peso / (estatura * estatura /10000),2)
+print(f"Tu indice de masa corparal es {imc}")
