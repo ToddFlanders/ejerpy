@@ -1,8 +1,11 @@
 class clientes:
-     def __init__(self, nombre, cantidad):
-        self.nombre = nombre
-        self.cantidad = cantidad
+    def __init__(self):
+        self.nombre = input("Nombre del cliente: ")
+        self.total = int(input("Inserta la cantidad: "))
+    def depositar(self, ingresar):
+        self.total = self.total + int(ingresar)
+    def extraer(self, extraccion):
+        self.total = self.total - int(extraccion)
     
-def depositar(self):
-    ingresar = input
-    print(ingresar) 
+    def mostrar_total(self):
+        print(f"El saldo total de la cuenta actualmente: {self.total}")
